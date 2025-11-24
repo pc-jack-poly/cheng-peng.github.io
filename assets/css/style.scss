@@ -1,0 +1,274 @@
+---
+---
+
+// Import the default Cayman theme styles first
+@import "{{ site.theme }}";
+
+// Override: shrink the hero title font size
+.page-header .project-name {
+  font-size: 2.5rem; // default is large; make it a bit smaller
+}
+
+// Keep it readable on very small screens
+@media screen and (max-width: 600px) {
+  .page-header .project-name {
+    font-size: 2rem;
+  }
+}
+
+// Abstract paragraph: justify and slightly smaller font
+.main-content h2 + p {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 1rem; // slightly smaller than body default
+  line-height: 1.7;
+  color: #000; // force black text
+}
+
+// Academic styling for the abstract block
+.abstract {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 0.98rem;
+  line-height: 1.85;
+  letter-spacing: 0.003em;
+  word-spacing: 0.02em;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  color: #000;
+}
+
+.abstract p {
+  margin: 0 0 0.9rem;
+}
+
+// Ensure general body text and section headings render black in content area
+.main-content p,
+.main-content li {
+  color: #000;
+}
+
+// Header buttons container for logo and GitHub button
+.header-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+// Logo button styling
+.btn-logo {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-logo:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-github {
+  background-color: #24292f;
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+.btn-github:hover {
+  background-color: #2f353b;
+  color: #fff;
+}
+
+.octo-icon {
+  height: 1em;
+  width: 1em;
+  margin-right: 0.5rem;
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
+}
+
+// Department logo: make it white for better visibility on dark background
+.comp-logo-img {
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+
+// Responsive adjustments
+@media screen and (max-width: 42em) {
+  .header-buttons {
+    flex-direction: column;
+  }
+  
+  .logo-img {
+    height: 28px;
+  }
+}
+
+
+/* Responsive 50% width video block centered */
+.video-container-50 {
+  width: 50%;
+  margin: 1.5rem auto; /* center horizontally */
+}
+
+.video-container-50 video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.2);
+}
+
+@media screen and (max-width: 900px) {
+  .video-container-50 { width: 70%; }
+}
+
+@media screen and (max-width: 600px) {
+  .video-container-50 { width: 100%; }
+}
+
+/* Left-aligned 35% width variant */
+.video-container-35 {
+  width: 35%;
+  margin: 1.5rem 0; /* left aligned (no auto margins) */
+}
+
+.video-container-35 video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.2);
+}
+
+@media screen and (max-width: 900px) {
+  .video-container-35 { width: 60%; }
+}
+
+@media screen and (max-width: 600px) {
+  .video-container-35 { width: 100%; }
+}
+
+/* Left-aligned 25% width variant */
+.video-container-25 {
+  width: 25%;
+  margin: 1.5rem 0;
+}
+
+.video-container-25 video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.2);
+}
+
+@media screen and (max-width: 900px) {
+  .video-container-25 { width: 50%; }
+}
+
+@media screen and (max-width: 600px) {
+  .video-container-25 { width: 100%; }
+}
+
+/* Centered 40% width variant */
+.video-container-40 {
+  width: 40%;
+  margin: 1.5rem auto; /* centered */
+}
+
+.video-container-40 video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.2);
+}
+
+/* Left-aligned 50% width variant */
+.video-container-50-left {
+  width: 50%;
+  margin: 1.5rem 0; /* left aligned */
+}
+
+.video-container-50-left video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.2);
+}
+
+@media screen and (max-width: 900px) {
+  .video-container-50-left { width: 70%; }
+}
+
+@media screen and (max-width: 600px) {
+  .video-container-50-left { width: 100%; }
+}
+
+@media screen and (max-width: 900px) {
+  .video-container-40 { width: 70%; }
+}
+
+@media screen and (max-width: 600px) {
+  .video-container-40 { width: 100%; }
+}
+
+
+/* Figure floated to the right that wraps with text (used in Abstract) */
+.figure-right {
+  float: right;
+  width: 35%;
+  max-width: 420px;
+  margin: 0.25rem 0 1rem 1rem; /* space from text on left */
+}
+
+.figure-right .pdf-frame,
+.figure-right img {
+  border: 0;
+  display: block;
+  box-shadow: 0 2px 10px rgba(0,0,0,.15);
+  border-radius: 6px;
+}
+
+/* Keep original image intrinsic ratio and size (do not force scaling),
+   but prevent overflow on small containers */
+.figure-right img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Maintain a pleasant frame ratio only for embedded PDFs */
+.figure-right .pdf-frame {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/3;
+}
+
+.figure-right .caption {
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+  margin-top: 0.35rem;
+}
+
+@media screen and (max-width: 800px) {
+  .figure-right {
+    float: none;
+    width: 100%;
+    max-width: none;
+    margin: 0 0 1rem 0;
+  }
+}
