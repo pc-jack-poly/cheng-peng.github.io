@@ -4,6 +4,14 @@
 // Import the default Cayman theme styles first
 @import "{{ site.theme }}";
 
+// Custom header background image
+.page-header {
+  background-image: linear-gradient(120deg, #155799, #159957), url('../images/header-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 // Override: shrink the hero title font size
 .page-header .project-name {
   font-size: 2.5rem; // default is large; make it a bit smaller
