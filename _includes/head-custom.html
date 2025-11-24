@@ -1,0 +1,64 @@
+<style>
+/* Barcode gallery styling - 2 rows layout */
+.barcode-gallery {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 2rem 1.5rem !important;
+  max-width: 900px !important;
+  margin: 2rem auto !important;
+  padding: 1rem !important;
+}
+
+.barcode-item {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
+
+.barcode-item img {
+  width: 100% !important;
+  max-width: 250px !important;
+  height: auto !important;
+  border: 1px solid #ddd !important;
+  border-radius: 4px !important;
+  padding: 0.8rem !important;
+  background: #fff !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+}
+
+.barcode-label {
+  margin-top: 0.8rem !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  color: #333 !important;
+  text-align: center !important;
+}
+
+@media screen and (max-width: 768px) {
+  .barcode-gallery {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem 1rem !important;
+  }
+  
+  .barcode-item img {
+    max-width: 200px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .barcode-gallery {
+    grid-template-columns: 1fr !important;
+    gap: 1.2rem !important;
+  }
+  
+  .barcode-item img {
+    max-width: 250px !important;
+  }
+  
+  .barcode-label {
+    font-size: 0.9rem !important;
+  }
+}
+</style>
+
