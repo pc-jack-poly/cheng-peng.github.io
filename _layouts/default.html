@@ -15,7 +15,7 @@
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
-    <header class="page-header" role="banner">
+    <header class="page-header" role="banner" style="background-image: linear-gradient(120deg, rgba(21, 87, 153, 0.7), rgba(21, 153, 87, 0.7)), url('{{ "/assets/images/header-bg.jpg" | relative_url }}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       
