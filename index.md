@@ -55,9 +55,9 @@ Our approach is compatible with nearly all existing commercial barcode standards
 ## Demo: NFC-to-Camera Communication with EAN13 Format
 <div class="video-container-50-left">
   <video controls preload="metadata">
-    <source src="{{ 'assets/videos/parasiteattack.mp4' | relative_url }}" type="video/mp4">
+    <source src="{{ 'assets/videos/demo_recording.mp4' | relative_url }}" type="video/mp4">
     Your browser does not support the video tag.
-    <a href="{{ 'assets/videos/parasiteattack.mp4' | relative_url }}">Download video</a>
+    <a href="{{ 'assets/videos/demo_recording.mp4' | relative_url }}">Download video</a>
   </video>
   
 </div>
