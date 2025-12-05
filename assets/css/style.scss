@@ -56,6 +56,14 @@
   color: #000;
 }
 
+// Add decorative markers before all h2 headings
+.main-content h2::before {
+  content: "▸ ";
+  color: #159957;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
 // Header buttons container for logo and GitHub button
 .header-buttons {
   display: flex;
@@ -205,7 +213,7 @@
 
 /* Left-aligned 50% width variant */
 .video-container-50-left {
-  width: 50%;
+  width: 70%;
   margin: 1.5rem 0; /* left aligned */
 }
 

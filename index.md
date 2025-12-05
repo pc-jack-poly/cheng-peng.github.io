@@ -52,7 +52,7 @@ Our approach is compatible with nearly all existing commercial barcode standards
   </div>
 </div>
 
-## Demo: NFC-to-Camera Communication with EAN13 Format
+## Demo: NFC-Enabled Communication via Commercial Barcodes
 <div class="video-container-50-left">
   <video controls preload="metadata">
     <source src="{{ 'assets/videos/demo_recording.mp4' | relative_url }}" type="video/mp4">
