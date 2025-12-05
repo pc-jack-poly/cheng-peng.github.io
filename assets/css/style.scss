@@ -64,6 +64,12 @@
   margin-right: 0.5rem;
 }
 
+// Reduce spacing between headings and content
+.main-content h2 {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
 // Header buttons container for logo and GitHub button
 .header-buttons {
   display: flex;
